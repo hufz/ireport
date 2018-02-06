@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="bl_quotation_common1_subreport2" language="groovy" pageWidth="802" pageHeight="555" orientation="Landscape" columnWidth="802" leftMargin="0" rightMargin="0" topMargin="0" bottomMargin="0" uuid="fc974ce2-fc59-406d-9261-ab28ed47fcdd">
+	<property name="ireport.zoom" value="1.0"/>
+	<property name="ireport.x" value="0"/>
+	<property name="ireport.y" value="0"/>
+	<style name="table_TD" mode="Opaque" backcolor="#FFFFFF">
+		<box>
+			<pen lineWidth="0.5" lineColor="#000000"/>
+		</box>
+	</style>
+	<queryString language="SQL">
+		<![CDATA[select 1]]>
+	</queryString>
+	<field name="ullage" class="java.math.BigDecimal"/>
+	<field name="profit" class="java.math.BigDecimal"/>
+	<field name="taxPrice" class="java.math.BigDecimal"/>
+	<field name="artsItem" class="java.lang.String">
+		<fieldDescription><![CDATA[artsItem]]></fieldDescription>
+	</field>
+	<field name="artsFee" class="java.math.BigDecimal"/>
+	<detail>
+		<band height="20" splitType="Stretch">
+			<textField isBlankWhenNull="true">
+				<reportElement style="table_TD" stretchType="RelativeToBandHeight" mode="Transparent" x="0" y="0" width="40" height="20" uuid="1b03a3c8-88f9-4b57-8ee8-24ce3824a202"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font size="9"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{ullage}]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement style="table_TD" stretchType="RelativeToBandHeight" mode="Transparent" x="40" y="0" width="40" height="20" uuid="3ff51935-832b-4922-95c4-43c649a28c2b"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font size="9"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{profit}]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement style="table_TD" stretchType="RelativeToBandHeight" mode="Transparent" x="80" y="0" width="35" height="20" uuid="6dece84d-5d60-4aa6-b48e-d013640638c9"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font size="9"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{taxPrice}]]></textFieldExpression>
+			</textField>
+			<textField pattern="" isBlankWhenNull="true">
+				<reportElement style="table_TD" stretchType="RelativeToBandHeight" mode="Transparent" x="115" y="0" width="40" height="20" forecolor="#000000" backcolor="#FFFFFF" uuid="bfae333d-e4d9-40e5-b5e4-9740ffb86d25"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle" rotation="None" markup="none">
+					<font fontName="宋体" size="8" isBold="false" isItalic="false" isUnderline="false" isStrikeThrough="false" pdfFontName="STSong-Light" pdfEncoding="UniGB-UCS2-H" isPdfEmbedded="true"/>
+					<paragraph lineSpacing="Single"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{artsItem}]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement style="table_TD" stretchType="RelativeToBandHeight" mode="Transparent" x="155" y="0" width="40" height="20" uuid="67b885f1-6c63-4750-b7cf-c50ac1db6e2d"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font size="9"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{artsFee}]]></textFieldExpression>
+			</textField>
+		</band>
+	</detail>
+</jasperReport>

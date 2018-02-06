@@ -1,0 +1,795 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="report2" language="groovy" pageWidth="842" pageHeight="595" orientation="Landscape" columnWidth="842" leftMargin="0" rightMargin="0" topMargin="0" bottomMargin="0" uuid="e363e596-9c9e-4669-adbc-ae02272812e0">
+	<property name="ireport.zoom" value="1.0"/>
+	<property name="ireport.x" value="0"/>
+	<property name="ireport.y" value="0"/>
+	<style name="Crosstab Data Text" hAlign="Center"/>
+	<style name="table">
+		<box>
+			<pen lineWidth="1.0" lineColor="#000000"/>
+		</box>
+	</style>
+	<style name="table_TH" mode="Opaque" backcolor="#F0F8FF">
+		<box>
+			<pen lineWidth="0.5" lineColor="#000000"/>
+		</box>
+	</style>
+	<style name="table_CH" mode="Opaque" backcolor="#BFE1FF">
+		<box>
+			<pen lineWidth="0.5" lineColor="#000000"/>
+		</box>
+	</style>
+	<style name="table_TD" mode="Opaque" backcolor="#FFFFFF">
+		<box>
+			<pen lineWidth="0.5" lineColor="#000000"/>
+		</box>
+	</style>
+	<style name="table 1">
+		<box>
+			<pen lineWidth="1.0" lineColor="#000000"/>
+		</box>
+	</style>
+	<style name="table 1_TH" mode="Opaque" backcolor="#F0F8FF">
+		<box>
+			<pen lineWidth="0.5" lineColor="#000000"/>
+		</box>
+	</style>
+	<style name="table 1_CH" mode="Opaque" backcolor="#BFE1FF">
+		<box>
+			<pen lineWidth="0.5" lineColor="#000000"/>
+		</box>
+	</style>
+	<style name="table 1_TD" mode="Opaque" backcolor="#FFFFFF">
+		<box>
+			<pen lineWidth="0.5" lineColor="#000000"/>
+		</box>
+	</style>
+	<style name="table 2">
+		<box>
+			<pen lineWidth="1.0" lineColor="#000000"/>
+		</box>
+	</style>
+	<style name="table 2_TH" mode="Opaque" backcolor="#F0F8FF">
+		<box>
+			<pen lineWidth="0.5" lineColor="#000000"/>
+		</box>
+	</style>
+	<style name="table 2_CH" mode="Opaque" backcolor="#BFE1FF">
+		<box>
+			<pen lineWidth="0.5" lineColor="#000000"/>
+		</box>
+	</style>
+	<style name="table 2_TD" mode="Opaque" backcolor="#FFFFFF">
+		<box>
+			<pen lineWidth="0.5" lineColor="#000000"/>
+		</box>
+	</style>
+	<style name="table 3">
+		<box>
+			<pen lineWidth="1.0" lineColor="#000000"/>
+		</box>
+	</style>
+	<style name="table 3_TH" mode="Opaque" backcolor="#FFFFFF">
+		<box>
+			<pen lineWidth="0.5" lineColor="#000000"/>
+		</box>
+	</style>
+	<style name="table 3_CH" mode="Opaque" backcolor="#FFBFBF">
+		<box>
+			<pen lineWidth="0.5" lineColor="#000000"/>
+		</box>
+	</style>
+	<style name="table 3_TD" mode="Opaque" backcolor="#FFFFFF">
+		<box>
+			<pen lineWidth="0.5" lineColor="#000000"/>
+		</box>
+	</style>
+	<style name="table 4">
+		<box>
+			<pen lineWidth="1.0" lineColor="#000000"/>
+		</box>
+	</style>
+	<style name="table 4_TH" mode="Opaque" backcolor="#F0F8FF">
+		<box>
+			<pen lineWidth="0.5" lineColor="#000000"/>
+		</box>
+	</style>
+	<style name="table 4_CH" mode="Opaque" backcolor="#BFE1FF">
+		<box>
+			<pen lineWidth="0.5" lineColor="#000000"/>
+		</box>
+	</style>
+	<style name="table 4_TD" mode="Opaque" backcolor="#FFFFFF">
+		<box>
+			<pen lineWidth="0.5" lineColor="#000000"/>
+		</box>
+	</style>
+	<style name="table 5">
+		<box>
+			<pen lineWidth="1.0" lineColor="#000000"/>
+		</box>
+	</style>
+	<style name="table 5_TH" mode="Opaque" backcolor="#F0F8FF">
+		<box>
+			<pen lineWidth="0.5" lineColor="#000000"/>
+		</box>
+	</style>
+	<style name="table 5_CH" mode="Opaque" backcolor="#BFE1FF">
+		<box>
+			<pen lineWidth="0.5" lineColor="#000000"/>
+		</box>
+	</style>
+	<style name="table 5_TD" mode="Opaque" backcolor="#FFFFFF">
+		<box>
+			<pen lineWidth="0.5" lineColor="#000000"/>
+		</box>
+	</style>
+	<subDataset name="Table Dataset 1" uuid="42ca1b47-e157-4e27-85c1-ba7cdbf0e855">
+		<parameter name="SUBREPORT_DIR" class="java.lang.String" isForPrompting="false">
+			<defaultValueExpression><![CDATA["F:\\git\\gitlab_basic\\bf-srm\\bf-srm-web\\src\\main\\resources\\jasper\\"]]></defaultValueExpression>
+		</parameter>
+		<queryString>
+			<![CDATA[]]>
+		</queryString>
+		<field name="materialName" class="java.lang.String">
+			<fieldDescription><![CDATA[materialName]]></fieldDescription>
+		</field>
+		<field name="purchaseUnit" class="java.lang.String">
+			<fieldDescription><![CDATA[purchaseUnit]]></fieldDescription>
+		</field>
+		<field name="materialCode" class="java.lang.String">
+			<fieldDescription><![CDATA[materialCode]]></fieldDescription>
+		</field>
+		<field name="remarks" class="java.lang.String">
+			<fieldDescription><![CDATA[remarks]]></fieldDescription>
+		</field>
+		<field name="supCost" class="java.math.BigDecimal"/>
+		<field name="purCost" class="java.math.BigDecimal"/>
+		<field name="purDate" class="java.util.Date">
+			<fieldDescription><![CDATA[purDate]]></fieldDescription>
+		</field>
+		<field name="materialPrice" class="java.math.BigDecimal">
+			<fieldDescription><![CDATA[materialPrice]]></fieldDescription>
+		</field>
+		<field name="artsItem" class="java.lang.String">
+			<fieldDescription><![CDATA[artsItem]]></fieldDescription>
+		</field>
+		<field name="artsFee" class="java.math.BigDecimal">
+			<fieldDescription><![CDATA[artsFee]]></fieldDescription>
+		</field>
+		<field name="oldCost" class="java.math.BigDecimal"/>
+		<field name="materialLevel" class="java.lang.String">
+			<fieldDescription><![CDATA[materialLevel]]></fieldDescription>
+		</field>
+		<field name="gender" class="java.lang.String">
+			<fieldDescription><![CDATA[gender]]></fieldDescription>
+		</field>
+		<field name="style" class="java.lang.String">
+			<fieldDescription><![CDATA[style]]></fieldDescription>
+		</field>
+		<field name="specialProcess" class="java.lang.String">
+			<fieldDescription><![CDATA[specialProcess]]></fieldDescription>
+		</field>
+		<field name="specialProcessFee" class="java.math.BigDecimal">
+			<fieldDescription><![CDATA[specialProcessFee]]></fieldDescription>
+		</field>
+	</subDataset>
+	<parameter name="SUBREPORT_DIR" class="java.lang.String" isForPrompting="false">
+		<defaultValueExpression><![CDATA[]]></defaultValueExpression>
+	</parameter>
+	<parameter name="userName" class="java.lang.String"/>
+	<parameter name="billName" class="java.lang.String"/>
+	<queryString>
+		<![CDATA[]]>
+	</queryString>
+	<field name="blQuotLaceDtlPrintVOs" class="java.util.List">
+		<fieldDescription><![CDATA[blQuotLaceDtlPrintVOs]]></fieldDescription>
+	</field>
+	<field name="contactInfo" class="java.lang.String">
+		<fieldDescription><![CDATA[contactInfo]]></fieldDescription>
+	</field>
+	<field name="companyName" class="java.lang.String">
+		<fieldDescription><![CDATA[companyName]]></fieldDescription>
+	</field>
+	<field name="contactAddress" class="java.lang.String">
+		<fieldDescription><![CDATA[contactAddress]]></fieldDescription>
+	</field>
+	<field name="supplierContactInfo" class="java.lang.String">
+		<fieldDescription><![CDATA[supplierContactInfo]]></fieldDescription>
+	</field>
+	<field name="supplierName" class="java.lang.String">
+		<fieldDescription><![CDATA[supplierName]]></fieldDescription>
+	</field>
+	<field name="supplierAddress" class="java.lang.String">
+		<fieldDescription><![CDATA[supplierAddress]]></fieldDescription>
+	</field>
+	<field name="supplierSname" class="java.lang.String">
+		<fieldDescription><![CDATA[supplierSname]]></fieldDescription>
+	</field>
+	<field name="billNo" class="java.lang.String">
+		<fieldDescription><![CDATA[billNo]]></fieldDescription>
+	</field>
+	<field name="supplyTypeName" class="java.lang.String">
+		<fieldDescription><![CDATA[supplyTypeName]]></fieldDescription>
+	</field>
+	<pageHeader>
+		<band height="101" splitType="Stretch">
+			<textField pattern="" isBlankWhenNull="true">
+				<reportElement mode="Transparent" x="164" y="0" width="500" height="20" forecolor="#000000" backcolor="#FFFFFF" uuid="49734820-d477-4991-9a28-398a77bace5b"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle" rotation="None" markup="none">
+					<font fontName="宋体" size="16" isBold="false" isItalic="false" isUnderline="false" isStrikeThrough="false" pdfFontName="STSong-Light" pdfEncoding="UniGB-UCS2-H" isPdfEmbedded="true"/>
+					<paragraph lineSpacing="Single"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{supplierName}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement mode="Transparent" x="340" y="21" width="148" height="20" forecolor="#000000" backcolor="#FFFFFF" uuid="a6333332-797a-47ed-8d24-26e75c4f2138"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle" rotation="None" markup="none">
+					<font fontName="宋体" size="16" isBold="false" isItalic="false" isUnderline="false" isStrikeThrough="false" pdfFontName="STSong-Light" pdfEncoding="UniGB-UCS2-H" isPdfEmbedded="true"/>
+					<paragraph lineSpacing="Single"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{billName}]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement mode="Transparent" x="57" y="41" width="270" height="20" forecolor="#000000" backcolor="#FFFFFF" uuid="ed066031-7e1d-4022-a034-7246bc3537ca"/>
+				<textElement textAlignment="Left" verticalAlignment="Middle" rotation="None" markup="none">
+					<font fontName="宋体" size="10" isBold="false" isItalic="false" isUnderline="false" isStrikeThrough="false" pdfFontName="STSong-Light" pdfEncoding="UniGB-UCS2-H" isPdfEmbedded="true"/>
+					<paragraph lineSpacing="Single"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{companyName}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement mode="Transparent" x="12" y="41" width="45" height="20" forecolor="#000000" backcolor="#FFFFFF" uuid="28a0f72f-61b4-4d88-b15b-f5784e692441"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle" rotation="None" markup="none">
+					<font fontName="宋体" size="10" isBold="false" isItalic="false" isUnderline="false" isStrikeThrough="false" pdfFontName="STSong-Light" pdfEncoding="UniGB-UCS2-H" isPdfEmbedded="true"/>
+					<paragraph lineSpacing="Single"/>
+				</textElement>
+				<text><![CDATA[采购方:]]></text>
+			</staticText>
+			<staticText>
+				<reportElement mode="Transparent" x="327" y="41" width="45" height="20" forecolor="#000000" backcolor="#FFFFFF" uuid="e6db9665-bcb1-4410-8826-ccb0eaa520d4"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle" rotation="None" markup="none">
+					<font fontName="宋体" size="10" isBold="false" isItalic="false" isUnderline="false" isStrikeThrough="false" pdfFontName="STSong-Light" pdfEncoding="UniGB-UCS2-H" isPdfEmbedded="true"/>
+					<paragraph lineSpacing="Single"/>
+				</textElement>
+				<text><![CDATA[地址:]]></text>
+			</staticText>
+			<textField isBlankWhenNull="true">
+				<reportElement mode="Transparent" x="372" y="41" width="247" height="20" forecolor="#000000" backcolor="#FFFFFF" uuid="2b6c75df-1826-4f78-934d-d8b7d6dbeef7"/>
+				<textElement textAlignment="Left" verticalAlignment="Middle" rotation="None" markup="none">
+					<font fontName="宋体" size="10" isBold="false" isItalic="false" isUnderline="false" isStrikeThrough="false" pdfFontName="STSong-Light" pdfEncoding="UniGB-UCS2-H" isPdfEmbedded="true"/>
+					<paragraph lineSpacing="Single"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{contactAddress}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement mode="Transparent" x="619" y="41" width="66" height="20" forecolor="#000000" backcolor="#FFFFFF" uuid="129d27f7-b5a1-4af4-aac5-180ff06a91bd"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle" rotation="None" markup="none">
+					<font fontName="宋体" size="10" isBold="false" isItalic="false" isUnderline="false" isStrikeThrough="false" pdfFontName="STSong-Light" pdfEncoding="UniGB-UCS2-H" isPdfEmbedded="true"/>
+					<paragraph lineSpacing="Single"/>
+				</textElement>
+				<text><![CDATA[联系人及电话:]]></text>
+			</staticText>
+			<textField isBlankWhenNull="true">
+				<reportElement mode="Transparent" x="685" y="41" width="140" height="20" forecolor="#000000" backcolor="#FFFFFF" uuid="290b82ef-8120-4ab7-b656-fc644371d4db"/>
+				<textElement textAlignment="Left" verticalAlignment="Middle" rotation="None" markup="none">
+					<font fontName="宋体" size="10" isBold="false" isItalic="false" isUnderline="false" isStrikeThrough="false" pdfFontName="STSong-Light" pdfEncoding="UniGB-UCS2-H" isPdfEmbedded="true"/>
+					<paragraph lineSpacing="Single"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{contactInfo}]]></textFieldExpression>
+			</textField>
+			<textField evaluationTime="Report">
+				<reportElement mode="Transparent" x="771" y="3" width="15" height="20" forecolor="#000000" backcolor="#FFFFFF" uuid="05290aa7-37fa-4f02-84b0-0ce16f0aa776"/>
+				<textElement textAlignment="Center" verticalAlignment="Top" rotation="None" markup="none">
+					<font fontName="宋体" size="9" isBold="false" isItalic="false" isUnderline="false" isStrikeThrough="false" pdfFontName="STSong-Light" pdfEncoding="UniGB-UCS2-H" isPdfEmbedded="true"/>
+					<paragraph lineSpacing="Single"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$V{PAGE_NUMBER}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement mode="Transparent" x="786" y="3" width="10" height="20" forecolor="#000000" backcolor="#FFFFFF" uuid="6b4e4505-bf85-41fb-abbd-f11c286c5982"/>
+				<textElement textAlignment="Center" verticalAlignment="Top" rotation="None" markup="none">
+					<font fontName="宋体" size="9" isBold="false" isItalic="false" isUnderline="false" isStrikeThrough="false" pdfFontName="STSong-Light" pdfEncoding="UniGB-UCS2-H" isPdfEmbedded="true"/>
+					<paragraph lineSpacing="Single"/>
+				</textElement>
+				<text><![CDATA[页]]></text>
+			</staticText>
+			<textField>
+				<reportElement mode="Transparent" x="725" y="3" width="15" height="20" forecolor="#000000" backcolor="#FFFFFF" uuid="10d9ceb0-c845-46cc-b790-6369869b1b97"/>
+				<textElement textAlignment="Center" verticalAlignment="Top" rotation="None" markup="none">
+					<font fontName="宋体" size="9" isBold="false" isItalic="false" isUnderline="false" isStrikeThrough="false" pdfFontName="STSong-Light" pdfEncoding="UniGB-UCS2-H" isPdfEmbedded="true"/>
+					<paragraph lineSpacing="Single"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$V{PAGE_NUMBER}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement mode="Transparent" x="740" y="3" width="31" height="20" forecolor="#000000" backcolor="#FFFFFF" uuid="46b35738-5ffc-4b85-aaab-44dbde3ef7bd"/>
+				<textElement textAlignment="Center" verticalAlignment="Top" rotation="None" markup="none">
+					<font fontName="宋体" size="9" isBold="false" isItalic="false" isUnderline="false" isStrikeThrough="false" pdfFontName="STSong-Light" pdfEncoding="UniGB-UCS2-H" isPdfEmbedded="true"/>
+					<paragraph lineSpacing="Single"/>
+				</textElement>
+				<text><![CDATA[页，共]]></text>
+			</staticText>
+			<staticText>
+				<reportElement mode="Transparent" x="665" y="3" width="60" height="20" forecolor="#000000" backcolor="#FFFFFF" uuid="b586b919-45fe-46f1-a710-6c944afbde0f"/>
+				<textElement textAlignment="Center" verticalAlignment="Top" rotation="None" markup="none">
+					<font fontName="宋体" size="9" isBold="false" isItalic="false" isUnderline="false" isStrikeThrough="false" pdfFontName="STSong-Light" pdfEncoding="UniGB-UCS2-H" isPdfEmbedded="true"/>
+					<paragraph lineSpacing="Single"/>
+				</textElement>
+				<text><![CDATA[总页号: 第]]></text>
+			</staticText>
+			<staticText>
+				<reportElement mode="Transparent" x="12" y="61" width="45" height="20" forecolor="#000000" backcolor="#FFFFFF" uuid="f9c789a9-9f12-419d-b5e8-31e6911c22c5"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle" rotation="None" markup="none">
+					<font fontName="宋体" size="10" isBold="false" isItalic="false" isUnderline="false" isStrikeThrough="false" pdfFontName="STSong-Light" pdfEncoding="UniGB-UCS2-H" isPdfEmbedded="true"/>
+					<paragraph lineSpacing="Single"/>
+				</textElement>
+				<text><![CDATA[供应商:]]></text>
+			</staticText>
+			<textField isBlankWhenNull="true">
+				<reportElement mode="Transparent" x="57" y="61" width="270" height="20" forecolor="#000000" backcolor="#FFFFFF" uuid="31dd32bc-eccc-40c5-998a-b355871f386c"/>
+				<textElement textAlignment="Left" verticalAlignment="Middle" rotation="None" markup="none">
+					<font fontName="宋体" size="10" isBold="false" isItalic="false" isUnderline="false" isStrikeThrough="false" pdfFontName="STSong-Light" pdfEncoding="UniGB-UCS2-H" isPdfEmbedded="true"/>
+					<paragraph lineSpacing="Single"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{supplierName}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement mode="Transparent" x="327" y="61" width="45" height="20" forecolor="#000000" backcolor="#FFFFFF" uuid="9257599e-e4d0-4660-9142-253cf0eb89b1"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle" rotation="None" markup="none">
+					<font fontName="宋体" size="10" isBold="false" isItalic="false" isUnderline="false" isStrikeThrough="false" pdfFontName="STSong-Light" pdfEncoding="UniGB-UCS2-H" isPdfEmbedded="true"/>
+					<paragraph lineSpacing="Single"/>
+				</textElement>
+				<text><![CDATA[地址:]]></text>
+			</staticText>
+			<textField isBlankWhenNull="true">
+				<reportElement mode="Transparent" x="372" y="61" width="247" height="20" forecolor="#000000" backcolor="#FFFFFF" uuid="446a3e41-c33d-4cba-bad2-f32a18a38f9e"/>
+				<textElement textAlignment="Left" verticalAlignment="Middle" rotation="None" markup="none">
+					<font fontName="宋体" size="10" isBold="false" isItalic="false" isUnderline="false" isStrikeThrough="false" pdfFontName="STSong-Light" pdfEncoding="UniGB-UCS2-H" isPdfEmbedded="true"/>
+					<paragraph lineSpacing="Single"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{supplierAddress}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement mode="Transparent" x="619" y="61" width="66" height="20" forecolor="#000000" backcolor="#FFFFFF" uuid="6bb74497-49d9-41c3-a9a4-dc423f192e15"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle" rotation="None" markup="none">
+					<font fontName="宋体" size="10" isBold="false" isItalic="false" isUnderline="false" isStrikeThrough="false" pdfFontName="STSong-Light" pdfEncoding="UniGB-UCS2-H" isPdfEmbedded="true"/>
+					<paragraph lineSpacing="Single"/>
+				</textElement>
+				<text><![CDATA[联系人及电话:]]></text>
+			</staticText>
+			<textField isBlankWhenNull="true">
+				<reportElement mode="Transparent" x="685" y="61" width="140" height="20" forecolor="#000000" backcolor="#FFFFFF" uuid="475e4d67-60f7-4e37-a4f1-78347907e189"/>
+				<textElement textAlignment="Left" verticalAlignment="Middle" rotation="None" markup="none">
+					<font fontName="宋体" size="10" isBold="false" isItalic="false" isUnderline="false" isStrikeThrough="false" pdfFontName="STSong-Light" pdfEncoding="UniGB-UCS2-H" isPdfEmbedded="true"/>
+					<paragraph lineSpacing="Single"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{supplierContactInfo}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement mode="Transparent" x="12" y="81" width="53" height="20" forecolor="#000000" backcolor="#FFFFFF" uuid="56606e51-e2d7-48d0-87cb-06453ce32887"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle" rotation="None" markup="none">
+					<font fontName="宋体" size="10" isBold="false" isItalic="false" isUnderline="false" isStrikeThrough="false" pdfFontName="STSong-Light" pdfEncoding="UniGB-UCS2-H" isPdfEmbedded="true"/>
+					<paragraph lineSpacing="Single"/>
+				</textElement>
+				<text><![CDATA[供货类型:]]></text>
+			</staticText>
+			<textField isBlankWhenNull="true">
+				<reportElement mode="Transparent" x="65" y="81" width="140" height="20" forecolor="#000000" backcolor="#FFFFFF" uuid="8c91fc28-d61f-46ba-a1db-fc9214d1a2a5"/>
+				<textElement textAlignment="Left" verticalAlignment="Middle" rotation="None" markup="none">
+					<font fontName="宋体" size="10" isBold="false" isItalic="false" isUnderline="false" isStrikeThrough="false" pdfFontName="STSong-Light" pdfEncoding="UniGB-UCS2-H" isPdfEmbedded="true"/>
+					<paragraph lineSpacing="Single"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{supplyTypeName}]]></textFieldExpression>
+			</textField>
+		</band>
+	</pageHeader>
+	<columnHeader>
+		<band height="35">
+			<staticText>
+				<reportElement style="table_TD" mode="Transparent" x="5" y="0" width="85" height="35" forecolor="#000000" backcolor="#FFFFFF" uuid="b4e84937-51e3-4197-b56d-cd3014d413c8"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle" rotation="None" markup="none">
+					<font fontName="宋体" size="9" isBold="false" isItalic="false" isUnderline="false" isStrikeThrough="false" pdfFontName="STSong-Light" pdfEncoding="UniGB-UCS2-H" isPdfEmbedded="true"/>
+					<paragraph lineSpacing="Single"/>
+				</textElement>
+				<text><![CDATA[材料代码]]></text>
+			</staticText>
+			<staticText>
+				<reportElement style="table_TD" mode="Transparent" x="90" y="0" width="158" height="35" forecolor="#000000" backcolor="#FFFFFF" uuid="87056975-e8f7-4ec4-97a8-6ae5eb2f15ac"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle" rotation="None" markup="none">
+					<font fontName="宋体" size="9" isBold="false" isItalic="false" isUnderline="false" isStrikeThrough="false" pdfFontName="STSong-Light" pdfEncoding="UniGB-UCS2-H" isPdfEmbedded="true"/>
+					<paragraph lineSpacing="Single"/>
+				</textElement>
+				<text><![CDATA[材料名称]]></text>
+			</staticText>
+			<staticText>
+				<reportElement style="table_TD" mode="Transparent" x="248" y="0" width="24" height="35" forecolor="#000000" backcolor="#FFFFFF" uuid="2bceaab8-137e-49b6-b0ef-4c2050c45f31"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle" rotation="None" markup="none">
+					<font fontName="宋体" size="9" isBold="false" isItalic="false" isUnderline="false" isStrikeThrough="false" pdfFontName="STSong-Light" pdfEncoding="UniGB-UCS2-H" isPdfEmbedded="true"/>
+					<paragraph lineSpacing="Single"/>
+				</textElement>
+				<text><![CDATA[采购单位]]></text>
+			</staticText>
+			<staticText>
+				<reportElement style="table_TD" mode="Transparent" x="272" y="0" width="40" height="35" forecolor="#000000" backcolor="#FFFFFF" uuid="14f39906-bea3-4f35-9068-cd7282bc4fd2"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle" rotation="None" markup="none">
+					<font fontName="宋体" size="9" isBold="false" isItalic="false" isUnderline="false" isStrikeThrough="false" pdfFontName="STSong-Light" pdfEncoding="UniGB-UCS2-H" isPdfEmbedded="true"/>
+					<paragraph lineSpacing="Single"/>
+				</textElement>
+				<text><![CDATA[材料等级]]></text>
+			</staticText>
+			<staticText>
+				<reportElement style="table_TD" mode="Transparent" x="312" y="0" width="28" height="35" forecolor="#000000" backcolor="#FFFFFF" uuid="7d07735a-aca7-43a8-a9aa-b26ae632e794"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle" rotation="None" markup="none">
+					<font fontName="宋体" size="9" isBold="false" isItalic="false" isUnderline="false" isStrikeThrough="false" pdfFontName="STSong-Light" pdfEncoding="UniGB-UCS2-H" isPdfEmbedded="true"/>
+					<paragraph lineSpacing="Single"/>
+				</textElement>
+				<text><![CDATA[男女鞋]]></text>
+			</staticText>
+			<staticText>
+				<reportElement style="table_TD" mode="Transparent" x="340" y="0" width="41" height="35" forecolor="#000000" backcolor="#FFFFFF" uuid="a3c9bc70-1d38-44d9-89cb-795ee5f9b03c"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle" rotation="None" markup="none">
+					<font fontName="宋体" size="9" isBold="false" isItalic="false" isUnderline="false" isStrikeThrough="false" pdfFontName="STSong-Light" pdfEncoding="UniGB-UCS2-H" isPdfEmbedded="true"/>
+					<paragraph lineSpacing="Single"/>
+				</textElement>
+				<text><![CDATA[形式]]></text>
+			</staticText>
+			<staticText>
+				<reportElement style="table_TD" mode="Transparent" x="381" y="0" width="40" height="35" forecolor="#000000" backcolor="#FFFFFF" uuid="7a17a71a-4d1b-4c5c-a138-14abcb408b73"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle" rotation="None" markup="none">
+					<font fontName="宋体" size="9" isBold="false" isItalic="false" isUnderline="false" isStrikeThrough="false" pdfFontName="STSong-Light" pdfEncoding="UniGB-UCS2-H" isPdfEmbedded="true"/>
+					<paragraph lineSpacing="Single"/>
+				</textElement>
+				<text><![CDATA[材料单价]]></text>
+			</staticText>
+			<staticText>
+				<reportElement style="table_TD" mode="Transparent" x="421" y="0" width="53" height="35" forecolor="#000000" backcolor="#FFFFFF" uuid="f68900f8-d4ee-48e6-8114-ca31c08d3168"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle" rotation="None" markup="none">
+					<font fontName="宋体" size="9" isBold="false" isItalic="false" isUnderline="false" isStrikeThrough="false" pdfFontName="STSong-Light" pdfEncoding="UniGB-UCS2-H" isPdfEmbedded="true"/>
+					<paragraph lineSpacing="Single"/>
+				</textElement>
+				<text><![CDATA[特殊工艺]]></text>
+			</staticText>
+			<staticText>
+				<reportElement style="table_TD" mode="Transparent" x="525" y="0" width="90" height="18" forecolor="#000000" backcolor="#FFFFFF" uuid="5ff7a2b4-4c3d-49b9-b031-0e48bfa8b833"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle" rotation="None" markup="none">
+					<font fontName="宋体" size="9" isBold="false" isItalic="false" isUnderline="false" isStrikeThrough="false" pdfFontName="STSong-Light" pdfEncoding="UniGB-UCS2-H" isPdfEmbedded="true"/>
+					<paragraph lineSpacing="Single"/>
+				</textElement>
+				<text><![CDATA[单独计费工序]]></text>
+			</staticText>
+			<staticText>
+				<reportElement style="table_TD" mode="Transparent" x="735" y="0" width="55" height="35" forecolor="#000000" backcolor="#FFFFFF" uuid="4725c238-0020-4a57-996e-83f65387b87d"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle" rotation="None" markup="none">
+					<font fontName="宋体" size="9" isBold="false" isItalic="false" isUnderline="false" isStrikeThrough="false" pdfFontName="STSong-Light" pdfEncoding="UniGB-UCS2-H" isPdfEmbedded="true"/>
+					<paragraph lineSpacing="Single"/>
+				</textElement>
+				<text><![CDATA[生效日期]]></text>
+			</staticText>
+			<staticText>
+				<reportElement style="table_TD" mode="Transparent" x="655" y="0" width="40" height="35" forecolor="#000000" backcolor="#FFFFFF" uuid="1869abfa-e343-427c-b737-f524049753d1"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle" rotation="None" markup="none">
+					<font fontName="宋体" size="9" isBold="false" isItalic="false" isUnderline="false" isStrikeThrough="false" pdfFontName="STSong-Light" pdfEncoding="UniGB-UCS2-H" isPdfEmbedded="true"/>
+					<paragraph lineSpacing="Single"/>
+				</textElement>
+				<text><![CDATA[供方报价(元)]]></text>
+			</staticText>
+			<staticText>
+				<reportElement style="table_TD" mode="Transparent" x="695" y="0" width="40" height="35" forecolor="#000000" backcolor="#FFFFFF" uuid="c5ffa138-c25f-4dd1-a17f-46d570fc2db9"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle" rotation="None" markup="none">
+					<font fontName="宋体" size="9" isBold="false" isItalic="false" isUnderline="false" isStrikeThrough="false" pdfFontName="STSong-Light" pdfEncoding="UniGB-UCS2-H" isPdfEmbedded="true"/>
+					<paragraph lineSpacing="Single"/>
+				</textElement>
+				<text><![CDATA[采购确认价格(元)]]></text>
+			</staticText>
+			<staticText>
+				<reportElement style="table_TD" mode="Transparent" x="525" y="18" width="43" height="17" forecolor="#000000" backcolor="#FFFFFF" uuid="3f34957e-86e1-46cf-a094-67a8407a96a5"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle" rotation="None" markup="none">
+					<font fontName="宋体" size="9" isBold="false" isItalic="false" isUnderline="false" isStrikeThrough="false" pdfFontName="STSong-Light" pdfEncoding="UniGB-UCS2-H" isPdfEmbedded="true"/>
+					<paragraph lineSpacing="Single"/>
+				</textElement>
+				<text><![CDATA[工序]]></text>
+			</staticText>
+			<staticText>
+				<reportElement style="table_TD" mode="Transparent" x="568" y="18" width="47" height="17" forecolor="#000000" backcolor="#FFFFFF" uuid="f4e0a96b-a9b2-46f4-a520-6b14f8029419"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle" rotation="None" markup="none">
+					<font fontName="宋体" size="9" isBold="false" isItalic="false" isUnderline="false" isStrikeThrough="false" pdfFontName="STSong-Light" pdfEncoding="UniGB-UCS2-H" isPdfEmbedded="true"/>
+					<paragraph lineSpacing="Single"/>
+				</textElement>
+				<text><![CDATA[费用]]></text>
+			</staticText>
+			<staticText>
+				<reportElement style="table_TD" mode="Transparent" x="790" y="0" width="45" height="35" forecolor="#000000" backcolor="#FFFFFF" uuid="ea50825e-bdf3-4f3c-8a32-4dae814075e1"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle" rotation="None" markup="none">
+					<font fontName="宋体" size="9" isBold="false" isItalic="false" isUnderline="false" isStrikeThrough="false" pdfFontName="STSong-Light" pdfEncoding="UniGB-UCS2-H" isPdfEmbedded="true"/>
+					<paragraph lineSpacing="Single"/>
+				</textElement>
+				<text><![CDATA[备注]]></text>
+			</staticText>
+			<staticText>
+				<reportElement style="table_TD" mode="Transparent" x="615" y="0" width="40" height="35" forecolor="#000000" backcolor="#FFFFFF" uuid="348e88ab-a6ca-45a2-b0e2-0170f1767888"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle" rotation="None" markup="none">
+					<font fontName="宋体" size="9" isBold="false" isItalic="false" isUnderline="false" isStrikeThrough="false" pdfFontName="STSong-Light" pdfEncoding="UniGB-UCS2-H" isPdfEmbedded="true"/>
+					<paragraph lineSpacing="Single"/>
+				</textElement>
+				<text><![CDATA[原协议价]]></text>
+			</staticText>
+			<staticText>
+				<reportElement style="table_TD" mode="Transparent" x="474" y="0" width="51" height="35" forecolor="#000000" backcolor="#FFFFFF" uuid="5db29f6a-fea0-4c97-bb55-bd775706881a"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle" rotation="None" markup="none">
+					<font fontName="宋体" size="9" isBold="false" isItalic="false" isUnderline="false" isStrikeThrough="false" pdfFontName="STSong-Light" pdfEncoding="UniGB-UCS2-H" isPdfEmbedded="true"/>
+					<paragraph lineSpacing="Single"/>
+				</textElement>
+				<text><![CDATA[特殊工艺费]]></text>
+			</staticText>
+		</band>
+	</columnHeader>
+	<detail>
+		<band height="20" splitType="Stretch">
+			<componentElement>
+				<reportElement key="table 5" stretchType="RelativeToBandHeight" x="5" y="0" width="820" height="20" uuid="bc15c926-b09b-4698-b52d-273464f03594"/>
+				<jr:table xmlns:jr="http://jasperreports.sourceforge.net/jasperreports/components" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports/components http://jasperreports.sourceforge.net/xsd/components.xsd">
+					<datasetRun subDataset="Table Dataset 1" uuid="f5af8c2e-d4c2-47de-b809-881d0504ca16">
+						<dataSourceExpression><![CDATA[new net.sf.jasperreports.engine.data.JRBeanCollectionDataSource($F{blQuotLaceDtlPrintVOs})]]></dataSourceExpression>
+					</datasetRun>
+					<jr:column width="85" uuid="c46a04da-52df-42bc-82a6-3e20ce3f68e2">
+						<jr:detailCell style="table_TD" height="20" rowSpan="1">
+							<textField isStretchWithOverflow="true" isBlankWhenNull="true">
+								<reportElement stretchType="RelativeToBandHeight" x="0" y="0" width="85" height="20" uuid="1aa43d84-f67f-47c4-bd4d-5f8051f65355"/>
+								<textElement textAlignment="Center" verticalAlignment="Middle">
+									<font size="8"/>
+								</textElement>
+								<textFieldExpression><![CDATA[$F{materialCode}]]></textFieldExpression>
+							</textField>
+						</jr:detailCell>
+					</jr:column>
+					<jr:column width="158" uuid="4a4c35f4-ebb0-4029-87f0-784e283eb88d">
+						<jr:detailCell style="table_TD" height="20" rowSpan="1">
+							<textField isStretchWithOverflow="true" pattern="" isBlankWhenNull="true">
+								<reportElement stretchType="RelativeToBandHeight" mode="Transparent" x="0" y="0" width="158" height="20" forecolor="#000000" backcolor="#FFFFFF" uuid="d51a09e6-6ba6-4e7f-b828-cc7ec150ef06"/>
+								<textElement textAlignment="Center" verticalAlignment="Middle" rotation="None" markup="none">
+									<font fontName="宋体" size="8" isBold="false" isItalic="false" isUnderline="false" isStrikeThrough="false" pdfFontName="STSong-Light" pdfEncoding="UniGB-UCS2-H" isPdfEmbedded="true"/>
+									<paragraph lineSpacing="Single"/>
+								</textElement>
+								<textFieldExpression><![CDATA[$F{materialName}]]></textFieldExpression>
+							</textField>
+						</jr:detailCell>
+					</jr:column>
+					<jr:column width="24" uuid="2b75d955-602c-4b67-9259-681d07544273">
+						<jr:detailCell style="table_TD" height="20" rowSpan="1">
+							<textField isStretchWithOverflow="true" isBlankWhenNull="true">
+								<reportElement stretchType="RelativeToBandHeight" x="0" y="0" width="24" height="20" uuid="17362852-f830-4815-929a-e5c3ca5a3e34"/>
+								<textElement textAlignment="Center" verticalAlignment="Middle">
+									<font fontName="宋体" size="8" pdfFontName="STSong-Light" pdfEncoding="UniGB-UCS2-H" isPdfEmbedded="true"/>
+								</textElement>
+								<textFieldExpression><![CDATA[$F{purchaseUnit}]]></textFieldExpression>
+							</textField>
+						</jr:detailCell>
+					</jr:column>
+					<jr:column width="40" uuid="7be3671e-cb3d-49d5-bff8-9a503d6dab02">
+						<jr:detailCell style="table_TD" height="20" rowSpan="1">
+							<textField pattern="" isBlankWhenNull="true">
+								<reportElement style="table_TD" stretchType="RelativeToBandHeight" mode="Transparent" x="0" y="0" width="40" height="20" forecolor="#000000" backcolor="#FFFFFF" uuid="200acd07-5dce-4874-a634-bda305a467a1"/>
+								<textElement textAlignment="Center" verticalAlignment="Middle" rotation="None" markup="none">
+									<font fontName="宋体" size="8" isBold="false" isItalic="false" isUnderline="false" isStrikeThrough="false" pdfFontName="STSong-Light" pdfEncoding="UniGB-UCS2-H" isPdfEmbedded="true"/>
+									<paragraph lineSpacing="Single"/>
+								</textElement>
+								<textFieldExpression><![CDATA[$F{materialLevel}]]></textFieldExpression>
+							</textField>
+						</jr:detailCell>
+					</jr:column>
+					<jr:column width="28" uuid="9d15439c-e20c-449f-9011-1109367d6ec9">
+						<jr:detailCell style="table_TD" height="20" rowSpan="1">
+							<textField pattern="" isBlankWhenNull="true">
+								<reportElement style="table_TD" stretchType="RelativeToBandHeight" mode="Transparent" x="0" y="0" width="28" height="20" forecolor="#000000" backcolor="#FFFFFF" uuid="08536058-b089-4fd1-a8c3-cb8debd53945"/>
+								<textElement textAlignment="Center" verticalAlignment="Middle" rotation="None" markup="none">
+									<font fontName="宋体" size="8" isBold="false" isItalic="false" isUnderline="false" isStrikeThrough="false" pdfFontName="STSong-Light" pdfEncoding="UniGB-UCS2-H" isPdfEmbedded="true"/>
+									<paragraph lineSpacing="Single"/>
+								</textElement>
+								<textFieldExpression><![CDATA[$F{gender}]]></textFieldExpression>
+							</textField>
+						</jr:detailCell>
+					</jr:column>
+					<jr:column width="41" uuid="ab25605d-2efb-4a8d-ac91-f7d6bf57619c">
+						<jr:detailCell style="table_TD" height="20" rowSpan="1">
+							<textField pattern="" isBlankWhenNull="true">
+								<reportElement style="table_TD" stretchType="RelativeToBandHeight" mode="Transparent" x="0" y="0" width="41" height="20" forecolor="#000000" backcolor="#FFFFFF" uuid="56f2c90a-2a09-48bd-b971-5d4df2d5fbba"/>
+								<textElement textAlignment="Center" verticalAlignment="Middle" rotation="None" markup="none">
+									<font fontName="宋体" size="8" isBold="false" isItalic="false" isUnderline="false" isStrikeThrough="false" pdfFontName="STSong-Light" pdfEncoding="UniGB-UCS2-H" isPdfEmbedded="true"/>
+									<paragraph lineSpacing="Single"/>
+								</textElement>
+								<textFieldExpression><![CDATA[$F{style}]]></textFieldExpression>
+							</textField>
+						</jr:detailCell>
+					</jr:column>
+					<jr:column width="40" uuid="073bf285-71a2-4bbf-9331-de15be78df17">
+						<jr:detailCell style="table_TD" height="20" rowSpan="1">
+							<textField isBlankWhenNull="true">
+								<reportElement style="table_TD" stretchType="RelativeToBandHeight" x="0" y="0" width="40" height="20" uuid="21a9d770-240d-496f-93d3-7488b58db3a7"/>
+								<textElement textAlignment="Center" verticalAlignment="Middle"/>
+								<textFieldExpression><![CDATA[$F{materialPrice}]]></textFieldExpression>
+							</textField>
+						</jr:detailCell>
+					</jr:column>
+					<jr:column width="53" uuid="8c87a5e3-50a5-4ee0-8421-0fb2221a1e66">
+						<jr:detailCell style="table_TD" height="20" rowSpan="1">
+							<textField pattern="" isBlankWhenNull="true">
+								<reportElement style="table_TD" stretchType="RelativeToBandHeight" mode="Transparent" x="0" y="0" width="53" height="20" forecolor="#000000" backcolor="#FFFFFF" uuid="313686b5-1026-4955-8ffc-d8b1e69f31b1"/>
+								<textElement textAlignment="Center" verticalAlignment="Middle" rotation="None" markup="none">
+									<font fontName="宋体" size="8" isBold="false" isItalic="false" isUnderline="false" isStrikeThrough="false" pdfFontName="STSong-Light" pdfEncoding="UniGB-UCS2-H" isPdfEmbedded="true"/>
+									<paragraph lineSpacing="Single"/>
+								</textElement>
+								<textFieldExpression><![CDATA[$F{specialProcess}]]></textFieldExpression>
+							</textField>
+						</jr:detailCell>
+					</jr:column>
+					<jr:column width="51" uuid="839c02c3-ac1b-4df3-b081-344210dddcd7">
+						<jr:detailCell style="table_TD" height="20" rowSpan="1">
+							<textField isBlankWhenNull="true">
+								<reportElement style="table_TD" stretchType="RelativeToBandHeight" x="0" y="0" width="51" height="20" uuid="b22bb6db-59ed-42bc-9024-e37dc7a130db"/>
+								<textElement textAlignment="Center" verticalAlignment="Middle">
+									<font size="9"/>
+								</textElement>
+								<textFieldExpression><![CDATA[$F{specialProcessFee}]]></textFieldExpression>
+							</textField>
+						</jr:detailCell>
+					</jr:column>
+					<jr:column width="43" uuid="676dea6f-a780-4327-9476-7da3302c7bfe">
+						<jr:detailCell style="table_TD" height="20" rowSpan="1">
+							<textField pattern="" isBlankWhenNull="true">
+								<reportElement style="table_TD" stretchType="RelativeToBandHeight" mode="Transparent" x="0" y="0" width="43" height="20" forecolor="#000000" backcolor="#FFFFFF" uuid="3e13d2db-08f4-4ada-81dc-227fb3e3e7a1"/>
+								<textElement textAlignment="Center" verticalAlignment="Middle" rotation="None" markup="none">
+									<font fontName="宋体" size="8" isBold="false" isItalic="false" isUnderline="false" isStrikeThrough="false" pdfFontName="STSong-Light" pdfEncoding="UniGB-UCS2-H" isPdfEmbedded="true"/>
+									<paragraph lineSpacing="Single"/>
+								</textElement>
+								<textFieldExpression><![CDATA[$F{artsItem}]]></textFieldExpression>
+							</textField>
+						</jr:detailCell>
+					</jr:column>
+					<jr:column width="47" uuid="2aa2a5f8-2dd1-450e-8455-7cfee6b0eb9f">
+						<jr:detailCell style="table_TD" height="20" rowSpan="1">
+							<textField isBlankWhenNull="true">
+								<reportElement style="table_TD" stretchType="RelativeToBandHeight" x="0" y="0" width="47" height="20" uuid="405e03d2-fe9c-41e6-a9d0-d56bc095b31f"/>
+								<textElement textAlignment="Center" verticalAlignment="Middle">
+									<font size="9"/>
+								</textElement>
+								<textFieldExpression><![CDATA[$F{artsFee}]]></textFieldExpression>
+							</textField>
+						</jr:detailCell>
+					</jr:column>
+					<jr:column width="40" uuid="f7427914-828d-44a0-991f-578295f19f82">
+						<jr:detailCell style="table_TD" height="20" rowSpan="1">
+							<textField isStretchWithOverflow="true" isBlankWhenNull="true">
+								<reportElement stretchType="RelativeToBandHeight" x="0" y="0" width="40" height="20" uuid="abd8705f-97f9-4587-b5d3-6646b8f015b3"/>
+								<textElement textAlignment="Center" verticalAlignment="Middle"/>
+								<textFieldExpression><![CDATA[$F{oldCost}]]></textFieldExpression>
+							</textField>
+						</jr:detailCell>
+					</jr:column>
+					<jr:column width="40" uuid="0ad54135-9ed9-4ec6-a0d0-271be19c10c1">
+						<jr:detailCell style="table_TD" height="20" rowSpan="1">
+							<textField isStretchWithOverflow="true" isBlankWhenNull="true">
+								<reportElement stretchType="RelativeToBandHeight" x="0" y="0" width="40" height="20" uuid="86377529-e4eb-42cd-bc65-9c925bba3d72"/>
+								<textElement textAlignment="Center" verticalAlignment="Middle">
+									<font size="9"/>
+								</textElement>
+								<textFieldExpression><![CDATA[$F{supCost}]]></textFieldExpression>
+							</textField>
+						</jr:detailCell>
+					</jr:column>
+					<jr:column width="40" uuid="06ebfb8d-5895-4d38-acbd-043a1fa8c7df">
+						<jr:detailCell style="table_TD" height="20" rowSpan="1">
+							<textField isStretchWithOverflow="true" pattern="" isBlankWhenNull="true">
+								<reportElement stretchType="RelativeToBandHeight" mode="Transparent" x="0" y="0" width="40" height="20" forecolor="#000000" backcolor="#FFFFFF" uuid="23756474-2472-435b-a4e1-594fd0ca5d50"/>
+								<textElement textAlignment="Center" verticalAlignment="Middle" rotation="None" markup="none">
+									<font fontName="SansSerif" size="9" isBold="false" isItalic="false" isUnderline="false" isStrikeThrough="false" pdfEncoding="Cp1252" isPdfEmbedded="false"/>
+									<paragraph lineSpacing="Single"/>
+								</textElement>
+								<textFieldExpression><![CDATA[$F{purCost}]]></textFieldExpression>
+							</textField>
+						</jr:detailCell>
+					</jr:column>
+					<jr:column width="55" uuid="e8a28268-684a-4555-ba6b-f742ae0ec06b">
+						<jr:detailCell style="table_TD" height="20" rowSpan="1">
+							<textField isStretchWithOverflow="true" pattern="yyyy/MM/dd" isBlankWhenNull="true">
+								<reportElement stretchType="RelativeToBandHeight" x="0" y="0" width="55" height="20" uuid="b97c9b12-50b9-4e52-a91a-3f981a1aa2a3"/>
+								<textElement textAlignment="Center" verticalAlignment="Middle">
+									<font size="9"/>
+								</textElement>
+								<textFieldExpression><![CDATA[$F{purDate}]]></textFieldExpression>
+							</textField>
+						</jr:detailCell>
+					</jr:column>
+					<jr:column width="45" uuid="26b81942-0499-4efd-81f5-10fc5761031a">
+						<jr:detailCell style="table_TD" height="20" rowSpan="1">
+							<textField pattern="" isBlankWhenNull="true">
+								<reportElement style="table_TD" stretchType="RelativeToBandHeight" mode="Transparent" x="0" y="0" width="45" height="20" forecolor="#000000" backcolor="#FFFFFF" uuid="b319d8af-b948-4ab2-b955-ed07120a727c"/>
+								<textElement textAlignment="Center" verticalAlignment="Middle" rotation="None" markup="none">
+									<font fontName="宋体" size="8" isBold="false" isItalic="false" isUnderline="false" isStrikeThrough="false" pdfFontName="STSong-Light" pdfEncoding="UniGB-UCS2-H" isPdfEmbedded="true"/>
+									<paragraph lineSpacing="Single"/>
+								</textElement>
+								<textFieldExpression><![CDATA[$F{remarks}]]></textFieldExpression>
+							</textField>
+						</jr:detailCell>
+					</jr:column>
+				</jr:table>
+			</componentElement>
+		</band>
+	</detail>
+	<pageFooter>
+		<band height="80" splitType="Stretch">
+			<staticText>
+				<reportElement mode="Transparent" x="44" y="0" width="541" height="18" forecolor="#000000" backcolor="#FFFFFF" uuid="3f7a40a5-19a0-4243-8c55-1a4fb78de623"/>
+				<textElement textAlignment="Left" verticalAlignment="Middle" rotation="None" markup="none">
+					<font fontName="宋体" size="10" isBold="false" isItalic="false" isUnderline="false" isStrikeThrough="false" pdfFontName="STSong-Light" pdfEncoding="UniGB-UCS2-H" isPdfEmbedded="true"/>
+					<paragraph lineSpacing="Single"/>
+				</textElement>
+				<text><![CDATA[1、价格内容:增值税17%,含运费;]]></text>
+			</staticText>
+			<staticText>
+				<reportElement mode="Transparent" x="5" y="0" width="39" height="18" forecolor="#000000" backcolor="#FFFFFF" uuid="3854ed94-f52e-40c9-a805-7ef2fd63fb20"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle" rotation="None" markup="none">
+					<font fontName="宋体" size="10" isBold="false" isItalic="false" isUnderline="false" isStrikeThrough="false" pdfFontName="STSong-Light" pdfEncoding="UniGB-UCS2-H" isPdfEmbedded="true"/>
+					<paragraph lineSpacing="Single"/>
+				</textElement>
+				<text><![CDATA[说明:]]></text>
+			</staticText>
+			<staticText>
+				<reportElement mode="Transparent" x="44" y="18" width="541" height="18" forecolor="#000000" backcolor="#FFFFFF" uuid="aded0221-bc73-4e47-8207-d3df9b9742d0"/>
+				<textElement textAlignment="Left" verticalAlignment="Middle" rotation="None" markup="none">
+					<font fontName="宋体" size="10" isBold="false" isItalic="false" isUnderline="false" isStrikeThrough="false" pdfFontName="STSong-Light" pdfEncoding="UniGB-UCS2-H" isPdfEmbedded="true"/>
+					<paragraph lineSpacing="Single"/>
+				</textElement>
+				<text><![CDATA[2、付方方式:月结30天;]]></text>
+			</staticText>
+			<staticText>
+				<reportElement mode="Transparent" x="615" y="40" width="72" height="20" forecolor="#000000" backcolor="#FFFFFF" uuid="a3939b06-3f55-4c5c-93cd-b1db57e7a854"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle" rotation="None" markup="none">
+					<font fontName="宋体" size="10" isBold="false" isItalic="false" isUnderline="false" isStrikeThrough="false" pdfFontName="STSong-Light" pdfEncoding="UniGB-UCS2-H" isPdfEmbedded="true"/>
+					<paragraph lineSpacing="Single"/>
+				</textElement>
+				<text><![CDATA[总监:]]></text>
+			</staticText>
+			<staticText>
+				<reportElement mode="Transparent" x="421" y="40" width="72" height="20" forecolor="#000000" backcolor="#FFFFFF" uuid="7a54c8e0-cafb-4500-88ce-427d4c3e64ae"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle" rotation="None" markup="none">
+					<font fontName="宋体" size="10" isBold="false" isItalic="false" isUnderline="false" isStrikeThrough="false" pdfFontName="STSong-Light" pdfEncoding="UniGB-UCS2-H" isPdfEmbedded="true"/>
+					<paragraph lineSpacing="Single"/>
+				</textElement>
+				<text><![CDATA[采购负责人:]]></text>
+			</staticText>
+			<staticText>
+				<reportElement mode="Transparent" x="222" y="40" width="50" height="20" forecolor="#000000" backcolor="#FFFFFF" uuid="298fa269-b642-4a4b-9be6-67aa114257cd"/>
+				<textElement textAlignment="Right" verticalAlignment="Middle" rotation="None" markup="none">
+					<font fontName="宋体" size="10" isBold="false" isItalic="false" isUnderline="false" isStrikeThrough="false" pdfFontName="STSong-Light" pdfEncoding="UniGB-UCS2-H" isPdfEmbedded="true"/>
+					<paragraph lineSpacing="Single"/>
+				</textElement>
+				<text><![CDATA[采购员:]]></text>
+			</staticText>
+			<textField isBlankWhenNull="true">
+				<reportElement mode="Transparent" x="279" y="40" width="111" height="20" forecolor="#000000" backcolor="#FFFFFF" uuid="7f8ee0be-d4bb-4bbb-af20-3aa027853e32"/>
+				<textElement textAlignment="Left" verticalAlignment="Middle" rotation="None" markup="none">
+					<font fontName="宋体" size="10" isBold="false" isItalic="false" isUnderline="false" isStrikeThrough="false" pdfFontName="STSong-Light" pdfEncoding="UniGB-UCS2-H" isPdfEmbedded="true"/>
+					<paragraph lineSpacing="Single"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{userName}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement mode="Transparent" x="20" y="40" width="46" height="20" forecolor="#000000" backcolor="#FFFFFF" uuid="3902d51a-92cf-4d8f-aec8-194a505e40da"/>
+				<textElement textAlignment="Right" verticalAlignment="Middle" rotation="None" markup="none">
+					<font fontName="宋体" size="10" isBold="false" isItalic="false" isUnderline="false" isStrikeThrough="false" pdfFontName="STSong-Light" pdfEncoding="UniGB-UCS2-H" isPdfEmbedded="true"/>
+					<paragraph lineSpacing="Single"/>
+				</textElement>
+				<text><![CDATA[供应商:]]></text>
+			</staticText>
+			<textField isBlankWhenNull="true">
+				<reportElement mode="Transparent" x="68" y="40" width="89" height="20" forecolor="#000000" backcolor="#FFFFFF" uuid="e9892119-55bd-4b72-82d1-4497abb0c6a3"/>
+				<textElement textAlignment="Left" verticalAlignment="Middle" rotation="None" markup="none">
+					<font fontName="宋体" size="10" isBold="false" isItalic="false" isUnderline="false" isStrikeThrough="false" pdfFontName="STSong-Light" pdfEncoding="UniGB-UCS2-H" isPdfEmbedded="true"/>
+					<paragraph lineSpacing="Single"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{supplierSname}]]></textFieldExpression>
+			</textField>
+		</band>
+	</pageFooter>
+</jasperReport>
